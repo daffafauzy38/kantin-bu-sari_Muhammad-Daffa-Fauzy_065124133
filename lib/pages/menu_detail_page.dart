@@ -20,7 +20,6 @@ class _MenuDetailPageState extends State<MenuDetailPage> {
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.45,
             width: double.infinity,
-            // SUDAH DIUBAH KE ASSET LOKAL
             child: Image.asset(
               'assets/images/nasgor.jpg', 
               fit: BoxFit.cover,
