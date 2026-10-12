@@ -4,7 +4,7 @@ import 'pages/menu_detail_page.dart';
 import 'pages/order_page.dart';
 
 void main() {
-  runApp(const MyApp()); // NAMA CLASS DIKEMBALIKAN KE MyApp
+  runApp(const MyApp()); 
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Kantin Bu Sari', // JUDUL DIUBAH
+      title: 'Kantin Bu Sari', 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
