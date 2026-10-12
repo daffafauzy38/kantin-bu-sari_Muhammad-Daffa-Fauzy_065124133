@@ -28,7 +28,6 @@ class _MenuListPageState extends State<MenuListPage> {
                   bottomRight: Radius.circular(30),
                 ),
                 image: DecorationImage(
-                  // SUDAH DIUBAH KE ASSET LOKAL
                   image: AssetImage('assets/images/header.jpg'),
                   fit: BoxFit.cover,
                 ),
@@ -118,7 +117,6 @@ class _MenuListPageState extends State<MenuListPage> {
                 children: [
                   _buildFoodCard(
                     context: context,
-                    // SUDAH DIUBAH KE ASSET LOKAL
                     imagePath: 'assets/images/nasgor.jpg',
                     vendor: 'Kantin Bu Sari',
                     title: 'Nasi goreng rendang',
@@ -126,7 +124,6 @@ class _MenuListPageState extends State<MenuListPage> {
                   ),
                   _buildFoodCard(
                     context: context,
-                    // SUDAH DIUBAH KE ASSET LOKAL
                     imagePath: 'assets/images/ayam.jpg',
                     vendor: 'Kantin Bu Sari',
                     title: 'Ayam Bakar',
@@ -152,7 +149,6 @@ class _MenuListPageState extends State<MenuListPage> {
                   children: [
                     ClipRRect(
                       borderRadius: const BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
-                      // SUDAH DIUBAH KE ASSET LOKAL
                       child: Image.asset(
                         'assets/images/promo.jpg',
                         height: 150,
@@ -208,8 +204,6 @@ class _MenuListPageState extends State<MenuListPage> {
       ),
     );
   }
-
-  // WIDGET KUSTOM: Kartu Makanan Horizontal (SUDAH DIUBAH KE ASSET)
   Widget _buildFoodCard({required BuildContext context, required String imagePath, required String vendor, required String title, required String rating}) {
     return GestureDetector(
       onTap: () {
@@ -234,7 +228,6 @@ class _MenuListPageState extends State<MenuListPage> {
           children: [
             ClipRRect(
               borderRadius: const BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
-              // SUDAH DIUBAH KE ASSET LOKAL
               child: Image.asset(imagePath, height: 140, width: double.infinity, fit: BoxFit.cover),
             ),
             Padding(
