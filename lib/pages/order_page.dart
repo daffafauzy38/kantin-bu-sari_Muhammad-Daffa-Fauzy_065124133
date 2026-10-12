@@ -31,7 +31,6 @@ class OrderPage extends StatelessWidget {
                   'Kantin Bu Sari',
                   'Rp 25.000',
                   1,
-                  // SUDAH DIUBAH KE ASSET LOKAL
                   'assets/images/nasgor.jpg',
                 ),
               ],
@@ -111,7 +110,6 @@ class OrderPage extends StatelessWidget {
     );
   }
 
-  // WIDGET KUSTOM (SUDAH DIUBAH KE ASSET)
   Widget _buildCartItem(String title, String vendor, String price, int qty, String imagePath) {
     return Container(
       padding: const EdgeInsets.all(10),
@@ -130,7 +128,6 @@ class OrderPage extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(15),
-            // SUDAH DIUBAH KE ASSET LOKAL
             child: Image.asset(
               imagePath,
               width: 80,
